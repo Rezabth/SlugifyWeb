@@ -41,7 +41,7 @@ namespace SlugifyWeb.Controllers
                 .SingleOrDefaultAsync(m => m.PostID == id);
             if (post == null)
             {
-               _logger.LogWarning("Could not find Post with ID=" + id.ToString());
+               _logger.LogWarning("Warnmessage:Could not find Post with ID=" + id.ToString());
                 return NotFound();
             }
 
